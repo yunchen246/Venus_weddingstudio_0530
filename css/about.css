@@ -1,0 +1,89 @@
+body {
+  background-color: #EEE8E4; }
+
+/* about.html*/
+#ad-about-banner-phone {
+  display: none; }
+  @media (max-width: 767px) {
+    #ad-about-banner-phone {
+      display: block; } }
+
+#ad-about-banner {
+  margin: 0 auto;
+  height: 640px; }
+  @media (max-width: 767px) {
+    #ad-about-banner {
+      display: none; } }
+  #ad-about-banner .about-banner {
+    position: relative; }
+
+#about-about-bg {
+  margin: 0 auto;
+  background-color: #EEE8E4; }
+  @media (max-width: 767px) {
+    #about-about-bg #about-article {
+      width: 92%;
+      margin-top: 0px;
+      margin-left: 4%;
+      margin-right: 4%; } }
+  #about-about-bg li:first-child {
+    float: left;
+    width: 48%;
+    margin-right: 2%; }
+    @media (max-width: 767px) {
+      #about-about-bg li:first-child {
+        float: none;
+        width: 92%;
+        margin-top: 0px;
+        margin-left: 4%;
+        margin-right: 4%; } }
+  #about-about-bg li:nth-child(2) {
+    float: left;
+    width: 50%; }
+    @media (max-width: 767px) {
+      #about-about-bg li:nth-child(2) {
+        float: none;
+        width: 92%;
+        margin-top: 0px;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 10px;
+        margin-bottom: 10px; } }
+
+#about-article {
+  margin: 30px 0px;
+  margin-top: 60px; }
+  #about-article .about-article-title {
+    padding: 10px 0px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem; }
+  #about-article h2 {
+    font-family: 'EB Garamond', serif;
+    color: #AE8E5D;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+    font-size: 2rem; }
+  #about-article span {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #444; }
+
+#about-article-2 .about-article-title-2 {
+  padding: 0px 0px; }
+
+#about-article-2 h2 {
+  color: #AE8E5D;
+  margin-bottom: .5rem;
+  font-size: 1rem;
+  line-height: 1.6rem; }
+
+#about-article-2 span {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #444; }
+
+.about-article-3-img {
+  margin: 30px auto; }
+  @media (max-width: 767px) {
+    .about-article-3-img {
+      margin: 10px auto; } }

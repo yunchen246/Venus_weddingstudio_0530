@@ -1,0 +1,193 @@
+@charset "UTF-8";
+body {
+  font-family: 'Noto Sans TC', ‘cwTeXMing’, 'sans-serif',  "Microsoft JhengHei"; }
+
+a {
+  text-decoration: none; }
+
+/*設定rem=16*/
+html {
+  font-size: 16px; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+#gototop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+  cursor: pointer; }
+
+.top {
+  padding: 15px 20px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  background: #d9d8d8; }
+  .top i {
+    font-size: 1.5rem;
+    font-weight: 300; }
+
+.top:hover {
+  color: #bbb;
+  background: #fff; }
+
+#wrap {
+  max-width: 1280px;
+  margin: 0 auto; }
+
+/*bar*/
+#bar {
+  background-color: #e5e5e5;
+  position: relative;
+  margin-bottom: 0;
+  min-height: 45px;
+  background-size: cover; }
+  #bar .bar-box {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 10px 30px;
+    padding-top: 15px; }
+    @media (max-width: 767px) {
+      #bar .bar-box {
+        padding: 5px 10px;
+        padding-top: 15px; } }
+    #bar .bar-box .bar-box-tel {
+      float: left; }
+    #bar .bar-box .bar-box-info {
+      float: right; }
+    #bar .bar-box li {
+      float: left; }
+    #bar .bar-box a {
+      display: block;
+      font-size: 0.8rem;
+      color: #9F9F9F;
+      padding-left: 10px; }
+
+/*nav*/
+nav {
+  background-color: #fff;
+  position: relative;
+  padding: 10px 30px;
+  -webkit-box-shadow: 0px 3px 6px #DBDBDB;
+  box-shadow: 0px 3px 6px #DBDBDB;
+  z-index: 2; }
+  @media (max-width: 767px) {
+    nav {
+      padding: 10px 10px; } }
+
+#nav-box {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0px 30px; }
+  @media (max-width: 767px) {
+    #nav-box {
+      padding: 0px 0px; } }
+  #nav-box .menu {
+    float: right;
+    /*margin-top: 46px;*/ }
+    @media (max-width: 767px) {
+      #nav-box .menu {
+        background-color: #fff;
+        max-height: 0px;
+        overflow: hidden;
+        position: absolute;
+        z-index: 1;
+        top: 100px;
+        left: 0;
+        right: 0; } }
+    #nav-box .menu li {
+      float: left; }
+      @media (max-width: 767px) {
+        #nav-box .menu li {
+          padding-top: 6px;
+          padding-bottom: 6px;
+          float: none;
+          border-bottom: solid 1px #9F9F9F; } }
+      #nav-box .menu li a {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        color: #9F9F9F;
+        letter-spacing: 4px;
+        margin-left: 30px; }
+        @media (max-width: 767px) {
+          #nav-box .menu li a {
+            text-align: center;
+            display: block;
+            margin: 0 auto; } }
+      #nav-box .menu li a:hover {
+        color: #AE8E5D; }
+  #nav-box .logo {
+    float: left; }
+    #nav-box .logo a {
+      background: url(../images/logo.png);
+      background-repeat: no-repeat;
+      display: block;
+      width: 184px;
+      height: 80px;
+      text-indent: 110%;
+      white-space: nowrap;
+      overflow: hidden; }
+
+main {
+  padding: 30px 0px; }
+
+footer {
+  padding: 30px 10px; }
+
+#footer-bg {
+  background-color: #ededed;
+  /*border: solid 1px red;*/ }
+
+.hr-style {
+  height: 1px;
+  border: none;
+  border-top: 1px dashed #787878; }
+
+.info-kind {
+  color: #787878;
+  font-size: 1rem;
+  line-height: 1.6rem; }
+  .info-kind li {
+    float: left;
+    width: 21.25%;
+    font-size: 0.8rem; }
+    .info-kind li .info-title {
+      font-size: 1rem; }
+  .info-kind li:first-child {
+    margin-right: 5%; }
+  .info-kind li:nth-child(2) {
+    margin-right: 5%; }
+  .info-kind li:nth-child(3) {
+    margin-right: 5%; }
+
+#copyright-bg {
+  margin: 0 auto;
+  background-color: #e6e6e6;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #787878;
+  line-height: 2rem; }
+
+.showmenu {
+  display: none; }
+  @media (max-width: 767px) {
+    .showmenu {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      float: right;
+      display: block;
+      border: solid 1px #9F9F9F;
+      color: #9F9F9F;
+      font-size: 1.2rem;
+      text-align: center;
+      width: 70px;
+      padding-top: 25px;
+      padding-bottom: 25px; } }
+
+.menu-show.menu {
+  max-height: 800px; }
