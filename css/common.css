@@ -79,18 +79,18 @@ nav {
     nav {
       padding: 10px 10px; } }
 
-#nav-box {
+.nav-box {
   margin: 0 auto;
   max-width: 1280px;
   padding: 0px 30px; }
   @media (max-width: 767px) {
-    #nav-box {
+    .nav-box {
       padding: 0px 0px; } }
-  #nav-box .menu {
+  .nav-box .menu {
     float: right;
     /*margin-top: 46px;*/ }
     @media (max-width: 767px) {
-      #nav-box .menu {
+      .nav-box .menu {
         background-color: #fff;
         max-height: 0px;
         overflow: hidden;
@@ -99,30 +99,30 @@ nav {
         top: 100px;
         left: 0;
         right: 0; } }
-    #nav-box .menu li {
+    .nav-box .menu li {
       float: left; }
       @media (max-width: 767px) {
-        #nav-box .menu li {
+        .nav-box .menu li {
           padding-top: 6px;
           padding-bottom: 6px;
           float: none;
           border-bottom: solid 1px #9F9F9F; } }
-      #nav-box .menu li a {
+      .nav-box .menu li a {
         font-size: 1rem;
         line-height: 1.6rem;
         color: #9F9F9F;
         letter-spacing: 4px;
         margin-left: 30px; }
         @media (max-width: 767px) {
-          #nav-box .menu li a {
+          .nav-box .menu li a {
             text-align: center;
             display: block;
             margin: 0 auto; } }
-      #nav-box .menu li a:hover {
+      .nav-box .menu li a:hover {
         color: #AE8E5D; }
-  #nav-box .logo {
+  .nav-box .logo {
     float: left; }
-    #nav-box .logo a {
+    .nav-box .logo a {
       background: url(../images/logo.png);
       background-repeat: no-repeat;
       display: block;
