@@ -28,25 +28,61 @@ body{
 }
 
 #ad-about-banner{
-	position: relative;
-  margin: 0 auto;
-  height: 450px; 
+	  position: relative;
+    margin: 0 auto;
+  height: 500px; 
   width: 1920px;
-  background-image: url("https://images.unsplash.com/photo-1506059837806-7de0cf7d4dc6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80");
+  background-image: url(../images/abouts-banner-1.png);
+  @include phone(){
+  	display: none;
+  }
 }
 
 #ad-about-banner:after {
-	content: "";
+  content: "";
   position: absolute;
-  height: 450px; 
-   border-right: 1920px solid #e5c3b2;
-	border-top: 0px solid transparent;
-	border-bottom: 80px solid transparent;
+/*   width: 450px; */
+  height: 400px;
+/*   background-color: red; */
+  border-top: 0px solid #e5c3b2;
+	border-bottom: 100px solid #EEE8E4;
+  border-right: 1920px solid transparent;
 
   @include phone(){
   	display: none;
   }
   .about-banner {
+    position: relative; }
+}
+
+#ad-about-banner-phone{
+	display: none;
+	position: relative;
+    margin: 0 auto;
+ 	height: 440px; 
+  width: 450px;
+  background-image: url(../images/about-banner-1-phone.png);
+  background-position: right center; 
+  @include phone(){
+  	display: block;
+  }
+}
+
+#ad-about-banner-phone:after {
+	display: none;
+   content: "";
+  position: absolute;
+/*   width: 450px; */
+  height: 370px;
+/*   background-color: red; */
+  border-top: 0px solid #e5c3b2;
+	border-bottom: 80px solid #EEE8E4;
+  border-right: 450px solid transparent;
+
+  @include phone(){
+  	display: block;
+  }
+  .ad-about-banner-phone {
     position: relative; }
 }
 

@@ -124,8 +124,10 @@ nav{
 	}
 	.menu{
 		float: right; 
-		/*margin-top: 46px;*/
+		margin-top: 46px;
 		@include phone(){
+		transition: max-height 2.3s;	
+		margin-top: 0px;
 		background-color: #fff;
 		max-height: 0px;
 		overflow: hidden;
@@ -208,6 +210,13 @@ footer{
 	li{
 		float: left;
 		width: 21.25%;
+		@include phone(){
+		float: none;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-bottom: 1rem;	
+		}
 		font-size: $littele-font;
 		.info-title{
 		font-size: $content-font;	
@@ -222,6 +231,11 @@ footer{
 	li:nth-child(3){
 		margin-right: 5%;
 	}
+	li:nth-child(4){
+		@include phone(){
+		margin-bottom: 0px;	
+		}
+	}	
 }
 
 #copyright-bg{
@@ -251,6 +265,6 @@ footer{
 	}
 }
 
-	.menu-show.menu{
+	.menu-show .menu{
 		max-height: 800px;
 	}

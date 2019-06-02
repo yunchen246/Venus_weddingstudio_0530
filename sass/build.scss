@@ -1,0 +1,42 @@
+$system-color: #AE8E5D;
+$match-color: #9F9F9F;
+$match-color-2: #787878;
+$white-color: #fff;
+$title-font: 2rem;
+$hit-font: 1.2rem;
+$bar-font: .8rem;
+$content-font: 1rem;
+$littele-font: .8rem;
+
+@mixin phone{
+	@media(max-width: 767px){
+	@content
+	}
+}
+
+#ad-build-banner-phone
+{
+  display: none;
+  @include phone(){
+  display: block;
+  }
+}
+#ad-build-banner {
+  display: block;
+  margin: 0 auto;
+  height: 640px; 
+  @include phone(){
+  display: none;	
+  }
+  .build-banner {
+    position: relative; }
+}
+
+#build-copyright-bg{
+	margin: 0 auto;
+	background-color: #fff;
+	font-size: $littele-font;
+	text-align: center;
+	color: $match-color-2;
+	line-height: 2rem;
+}

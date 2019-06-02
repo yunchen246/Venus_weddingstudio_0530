@@ -1,0 +1,23 @@
+#ad-build-banner-phone {
+  display: none; }
+  @media (max-width: 767px) {
+    #ad-build-banner-phone {
+      display: block; } }
+
+#ad-build-banner {
+  display: block;
+  margin: 0 auto;
+  height: 640px; }
+  @media (max-width: 767px) {
+    #ad-build-banner {
+      display: none; } }
+  #ad-build-banner .build-banner {
+    position: relative; }
+
+#build-copyright-bg {
+  margin: 0 auto;
+  background-color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #787878;
+  line-height: 2rem; }
