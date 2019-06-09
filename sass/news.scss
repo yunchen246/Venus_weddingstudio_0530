@@ -1,0 +1,127 @@
+$system-color: #AE8E5D; //金色
+$match-color: #9F9F9F; //中灰
+$match-color-2: #787878; //深灰
+$white-color: #fff; //白
+$skin-color: #F7F4F0; //膚灰
+$title-font: 2rem;
+$hit-font: 1.2rem;
+$bar-font: .8rem;
+$content-font: 1rem;
+$littele-font: .8rem;
+
+%title-h2{
+	font-family: 'EB Garamond', serif;
+    color: $system-color;
+    text-align: center;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	font-size: $title-font;
+}
+
+%span-hit{
+	font-size: $hit-font;
+	line-height: 1.6rem;
+	color: #444;
+	text-align: center;
+	letter-spacing: .2rem;
+}
+
+
+@mixin phone{
+	@media(max-width: 767px){
+	@content
+	}
+}
+
+#ad-news-banner-phone
+{
+  display: none;
+  @include phone(){
+  display: block;
+  margin: 0 auto;
+  height:  auto;
+  .news-banner-phone {
+  position: relative; }
+  }
+}
+#ad-news-banner {
+  display: block;
+  margin: 0 auto;
+  height: 640px; 
+  @include phone(){
+  display: none;  
+  }
+  .news-banner {
+  position: relative; }
+}
+
+#news-kind-bg{
+	margin: 0 auto;
+	@include phone(){
+	width: 90%;
+	}
+}
+
+#news-kind{
+	margin: 30px 0px;
+	margin-top: 20px;
+	.news-kind-title{
+	padding: 10px 0px;
+	margin-bottom: 1.5rem;
+	margin-top: 1.5rem;
+	// border: solid 1px red;
+	}
+	h2{
+		@extend %title-h2;
+		text-align: left;
+		margin-bottom: .5rem;
+		border-bottom: solid 1px $system-color;
+		padding-bottom: 5px;
+    }
+	span{
+		@extend %span-hit;
+		text-align: left;
+	}
+}
+
+.news-projects{
+	// border: solid 1px green;
+	
+	li{
+	padding: 20px;
+	border: dashed 1px #868686;	
+	margin-bottom: 30px;
+	}
+	h5{
+	  text-align: left;
+	  margin-bottom: 1rem;
+	  margin-top: 1rem;
+	  font-size: 1.5rem;
+	  line-height: 2.5rem;
+	  color: $system-color; 
+	  @include phone(){
+      font-size: 1rem;
+	  line-height: 1.5rem;
+	  }	
+	}
+	p{
+	@extend %span-hit;
+	text-align: left;
+	line-height: 1.8rem;
+	@include phone(){
+  	font-size: 1rem;
+	line-height: 1.5rem;
+    }		
+	}
+	small{
+	display: block;
+	margin-top: 20px;	
+	color: $match-color;
+	}
+	img{
+	box-sizing: border-box;	
+	border: solid 1px #868686;
+	padding: 6px;	
+	}
+}
+

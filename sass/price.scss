@@ -1,0 +1,184 @@
+$system-color: #AE8E5D; //金色
+$match-color: #9F9F9F; //中灰
+$match-color-2: #787878; //深灰
+$white-color: #fff; //白
+$skin-color: #F7F4F0; //膚灰
+$title-font: 2rem;
+$hit-font: 1.2rem;
+$bar-font: .8rem;
+$content-font: 1rem;
+$littele-font: .8rem;
+
+%title-h2{
+	font-family: 'EB Garamond', serif;
+    color: $system-color;
+    text-align: center;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	font-size: $title-font;
+}
+
+%span-hit{
+	font-size: $hit-font;
+	line-height: 1.6rem;
+	color: #444;
+	text-align: center;
+	letter-spacing: .2rem;
+}
+
+
+@mixin phone{
+	@media(max-width: 767px){
+	@content
+	}
+}
+
+#ad-price-banner-phone
+{
+  display: none;
+  @include phone(){
+  display: block;
+  margin: 0 auto;
+  height:  auto;
+  .price-banner-phone {
+  position: relative; }
+  }
+}
+#ad-price-banner {
+  display: block;
+  margin: 0 auto;
+  height: 640px; 
+  @include phone(){
+  display: none;  
+  }
+  .price-banner {
+  position: relative; }
+}
+
+
+
+.price-kind{
+	text-align: center;	
+	margin: 30px auto;
+	.price-kind-title{
+	margin-bottom: 30px;
+	}
+	h2{
+    @extend %title-h2;
+    }
+    h5{
+    	color: $system-color;
+        text-align: center;
+	    margin-bottom: 1rem;
+	    margin-top: 1rem;
+    	font-size: $hit-font;
+    	letter-spacing: 1px;
+    }
+
+    span{
+	font-size: $hit-font;
+	line-height: 1.6rem;
+	color: #444;
+	text-align: center;
+	letter-spacing: .2rem;
+	}
+
+    img{
+	border-radius: 50%;
+    width: 100%;	
+	}
+
+    li{
+    	float: left;
+    	width: 22%;
+    	text-align: center;
+    	@include phone(){
+    	float: none;
+    	width: 80%;
+    	margin-left: 10%;
+    	margin-right: 10%;
+    	text-align: center;
+    	margin-bottom: 2rem;
+    	@include phone(){
+    	float: none;
+    	width: 90%;
+    	margin-left: 10%;
+    	margin-right: 10%;
+    	}
+    	}
+    }
+    li:first-child{
+	margin-right: 3%;
+	@include phone(){
+    	float: none;
+    	width: 90%;
+    	margin-left: 10%;
+    	margin-right: 10%;
+    	}
+	}
+	li:nth-child(2){
+	margin-right: 3%;
+	@include phone(){
+    	float: none;
+    	width: 90%;
+    	margin-left: 10%;
+    	margin-right: 10%;
+    	}
+	}
+	li:last-child{
+	margin-left: 3%;
+	@include phone(){
+    	float: none;
+    	width: 90%;
+    	margin-left: 10%;
+    	margin-right: 10%;
+    	}
+	}
+
+
+}
+
+.price-kind-list{
+	li{
+	box-sizing: border-box;
+	border-right: dashed 1px #444;
+	padding-right: 30px;
+	padding-left: 0px;
+	@include phone(){
+	border-right: dashed 0px #444;	
+	}
+	}
+	li:last-child{
+	border-right: dashed 0px #444;
+	@include phone(){
+	border-right: dashed 0px #444;	
+	}
+	}
+}
+.price-text{
+	padding: 2px;
+	span{
+	font-size: $content-font;
+	line-height: 1.6rem;
+	color: #444;
+	text-align: center;
+	letter-spacing: 0rem;
+	}
+	.price-text-title{
+	margin-bottom: 15px;
+	}
+	.price-text-content{
+	text-align: left;
+	span{
+	font-weight: 600;
+	line-height: 2rem;	
+	text-align: center;
+	}
+	p{
+	line-height: 1.5rem;
+
+	}
+	}
+
+}
+

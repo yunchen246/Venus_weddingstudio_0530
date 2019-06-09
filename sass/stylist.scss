@@ -1,0 +1,238 @@
+$system-color: #AE8E5D; //金色
+$match-color: #9F9F9F; //中灰
+$match-color-2: #787878; //深灰
+$white-color: #fff; //白
+$skin-color: #F7F4F0; //膚灰
+$title-font: 2rem;
+$hit-font: 1.2rem;
+$bar-font: .8rem;
+$content-font: 1rem;
+$littele-font: .8rem;
+
+%title-h2{
+	font-family: 'EB Garamond', serif;
+    color: $system-color;
+    text-align: center;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	font-size: $title-font;
+}
+
+%span-hit{
+	font-size: $hit-font;
+	line-height: 1.6rem;
+	color: #444;
+	text-align: center;
+	letter-spacing: .2rem;
+}
+
+
+@mixin phone{
+	@media(max-width: 767px){
+	@content
+	}
+}
+
+#ad-stylist-banner-phone
+{
+  display: none;
+  @include phone(){
+  display: block;
+  margin: 0 auto;
+  height:  auto;
+  .stylist-banner-phone {
+  position: relative; }
+  }
+}
+#ad-stylist-banner {
+  display: block;
+  margin: 0 auto;
+  height: 640px; 
+  @include phone(){
+  display: none;  
+  }
+  .stylist-banner {
+  position: relative; }
+}
+
+.stylist-kind-bg{
+	margin: 0 auto;
+	@include phone(){
+	width: 90%;
+	}
+}
+
+.stylist-kind{
+	margin: 10px 0px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	.stylist-kind-title{
+	padding: 10px 0px;
+	margin-bottom: 1.5rem;
+	margin-top: 1.5rem;
+	// border: solid 1px red;
+	}
+	h2{
+       color: $system-color;
+	    font-size: $title-font;
+		text-align: left;
+		margin-bottom: .5rem;
+		border-bottom: solid 1px $system-color;
+		padding-bottom: 5px;
+    }
+	span{
+		@extend %span-hit;
+		text-align: left;
+	}
+}
+
+.stylist-projects{
+	// border: solid 1px green;
+	
+	li{
+	// padding: 20px;
+	// border: dashed 1px #868686;	
+	}
+	h5{
+	  margin-bottom: 1rem;
+	  margin-top: 1rem;
+	  font-size: 1rem;
+	  line-height: 1.6rem;
+	  color: $system-color; 
+	}
+	p{
+	font-size: 1rem;
+	line-height: 1.6rem;
+	color: #444;
+	text-align: left;
+	letter-spacing: 0px;	
+	}
+
+}
+
+
+.stylist-box-1{
+	li{
+	float: left;
+	@include phone(){
+	float: none;
+	width: 100%;		
+	}
+
+	}
+	.stylist-img{
+	width: 50%;
+	@include phone(){
+	width: 100%;
+	border-bottom: 1px dashed #444;
+	padding-bottom: 20px;	
+	}	
+	}
+	.stylist-content-1{
+	width: 50%;	
+	@include phone(){
+	width: 100%;	
+	}
+	}
+}
+
+.stylist-content-1{
+	background-color: #f0e9ea;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	@include phone(){
+	background-color: #fff;	
+	}
+	ul{
+	height: 340px;
+	}
+	li{
+	float: left;
+	width: 50%;
+	// margin-bottom: 
+	//background-color: red;
+	@include phone(){
+	float: none;	
+	width: 90%;	
+	}
+	}
+	li:last-child{
+	float: left;
+	width: 45%;
+	margin-left: 3%;
+	margin-right: 2%;
+	// margin-bottom: 
+	//background-color: red;
+	@include phone(){
+	width: 100%;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-bottom: 20px;
+	}
+	}
+}
+
+.stylist-box-2{
+	li{
+	float: right;
+	@include phone(){
+	float: none;
+	width: 100%;
+	margin-top: 20px;		
+	}
+
+	}
+	.stylist-img{
+	width: 50%;	
+	@include phone(){
+	width: 100%;
+	// border-bottom: 1px solid #444;
+	padding-bottom: 20px;	
+
+	}	
+	}
+	.stylist-content-2{
+	width: 50%;	
+	@include phone(){
+	width: 100%;	
+	}
+	}
+}
+
+.stylist-content-2{
+	background-color: #f0e9ea;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	@include phone(){
+	background-color: #fff;	
+	}
+	ul{
+	height: 340px;
+	}
+	li{
+	float: right;
+	width: 50%;
+	// margin-bottom: 
+	//background-color: red;
+	@include phone(){
+	float: none;	
+	width: 90%;	
+	margin-top: 0px;
+	}
+	}
+	li:last-child{
+	float: left;
+	width: 45%;
+	margin-left: 3%;
+	margin-right: 2%;
+	// margin-bottom: 
+	//background-color: red;
+	@include phone(){
+	width: 100%;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-bottom: 20px;
+	}
+	}
+}
+

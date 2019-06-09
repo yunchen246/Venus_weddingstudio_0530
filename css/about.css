@@ -1,3 +1,11 @@
+#about-article h2 {
+  font-family: 'EB Garamond', serif;
+  color: #AE8E5D;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 2rem; }
+
 body {
   background-color: #EEE8E4; }
 
@@ -21,9 +29,9 @@ body {
 #ad-about-banner:after {
   content: "";
   position: absolute;
-  /*   width: 450px; */
+  /*width: 450px; */
   height: 400px;
-  /*   background-color: red; */
+  /*background-color: red; */
   border-top: 0px solid #e5c3b2;
   border-bottom: 100px solid #EEE8E4;
   border-right: 1920px solid transparent; }
@@ -49,9 +57,9 @@ body {
   display: none;
   content: "";
   position: absolute;
-  /*   width: 450px; */
+  /*width: 450px; */
   height: 370px;
-  /*   background-color: red; */
+  /*background-color: red; */
   border-top: 0px solid #e5c3b2;
   border-bottom: 80px solid #EEE8E4;
   border-right: 450px solid transparent; }
@@ -102,11 +110,8 @@ body {
     margin-bottom: 1.5rem;
     margin-top: 1.5rem; }
   #about-article h2 {
-    font-family: 'EB Garamond', serif;
-    color: #AE8E5D;
-    margin-bottom: .5rem;
-    margin-top: 1rem;
-    font-size: 2rem; }
+    text-align: left;
+    margin-bottom: .5rem; }
   #about-article span {
     font-size: 1rem;
     line-height: 1.6rem;

@@ -1,0 +1,112 @@
+#contact-kind h2 {
+  font-family: 'EB Garamond', serif;
+  color: #AE8E5D;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 2rem; }
+
+#contact-kind span {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #444;
+  text-align: center;
+  letter-spacing: .2rem; }
+
+#ad-contact-banner-phone {
+  display: none; }
+  @media (max-width: 767px) {
+    #ad-contact-banner-phone {
+      display: block;
+      margin: 0 auto;
+      height: auto; }
+      #ad-contact-banner-phone .contact-banner-phone {
+        position: relative; } }
+
+#ad-contact-banner {
+  display: block;
+  margin: 0 auto;
+  height: 640px; }
+  @media (max-width: 767px) {
+    #ad-contact-banner {
+      display: none; } }
+  #ad-contact-banner .contact-banner {
+    position: relative; }
+
+#contact-kind-bg {
+  margin: 0 auto; }
+
+#contact-kind {
+  margin: 30px 0px;
+  margin-top: 60px; }
+  @media (max-width: 767px) {
+    #contact-kind {
+      width: 100%; } }
+  #contact-kind .contact-kind-title {
+    padding: 10px 0px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem; }
+    @media (max-width: 767px) {
+      #contact-kind .contact-kind-title {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%; } }
+  #contact-kind h2 {
+    text-align: left;
+    margin-bottom: .5rem;
+    border-bottom: solid 1px #AE8E5D;
+    padding-bottom: 5px; }
+  #contact-kind span {
+    text-align: left;
+    letter-spacing: 0; }
+  #contact-kind p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    line-height: 1.5em; }
+
+.contact-kind-text li {
+  float: left;
+  width: 31.333333%; }
+  @media (max-width: 767px) {
+    .contact-kind-text li {
+      float: none;
+      width: 100%; } }
+
+.contact-kind-text li:first-child {
+  margin-right: 3%; }
+  @media (max-width: 767px) {
+    .contact-kind-text li:first-child {
+      width: 100%; } }
+
+.contact-kind-text li:nth-child(2) {
+  margin-right: 3%; }
+  @media (max-width: 767px) {
+    .contact-kind-text li:nth-child(2) {
+      width: 100%; } }
+
+@media (max-width: 767px) {
+  .contact-info {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%; } }
+
+.contact-info p {
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 2rem;
+  letter-spacing: 0px; }
+
+.contact-info .icon-i {
+  padding-right: 10px; }
+
+@media (max-width: 767px) {
+  .form-2 iframe {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%; } }
+
+@media (max-width: 767px) {
+  .contract-form .form-1 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%; } }

@@ -1,19 +1,22 @@
-/* dress.html */
 #ad-dress-banner-phone {
   display: none; }
+  @media (max-width: 767px) {
+    #ad-dress-banner-phone {
+      display: block;
+      margin: 0 auto;
+      height: auto; }
+      #ad-dress-banner-phone .dress-banner-phone {
+        position: relative; } }
 
 #ad-dress-banner {
+  display: block;
   margin: 0 auto;
   height: 640px; }
+  @media (max-width: 767px) {
+    #ad-dress-banner {
+      display: none; } }
   #ad-dress-banner .dress-banner {
     position: relative; }
-
-#bride-kind-bg {
-  margin: 0 auto;
-  height: 280px;
-  background-color: #f4edec;
-  background-repeat: no-repeat;
-  margin-bottom: 30px; }
 
 #bride-kind li {
   -webkit-box-sizing: border-box;
@@ -22,6 +25,13 @@
   width: 31.33333%;
   text-align: center;
   border: solid 1px #9F9F9F; }
+  @media (max-width: 767px) {
+    #bride-kind li {
+      float: none;
+      width: 80%;
+      margin-right: 10%;
+      margin-left: 10%;
+      margin-bottom: 2rem; } }
   #bride-kind li h5 {
     font-family: 'EB Garamond', serif;
     text-align: center;
@@ -44,24 +54,43 @@
   margin: 0px auto;
   margin-top: 30px;
   background-color: #E8DDDD; }
+  @media (max-width: 767px) {
+    #sewing-bg {
+      margin-top: 0px; } }
 
 #sewing-content li {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
   width: 50%; }
+  @media (max-width: 767px) {
+    #sewing-content li {
+      float: none;
+      width: 100%; } }
 
 #sewing-content li:first-child {
   padding: 67px;
   background-color: #F2EAEA; }
+  @media (max-width: 767px) {
+    #sewing-content li:first-child {
+      padding: 30px; } }
 
 #sewing-content li:nth-child(2) {
   padding: 67px; }
+  @media (max-width: 767px) {
+    #sewing-content li:nth-child(2) {
+      padding: 30px; } }
 
 #sewing-content .content {
   float: left;
   width: 45%;
   margin-right: 5%; }
+  @media (max-width: 767px) {
+    #sewing-content .content {
+      float: none;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 2rem; } }
   #sewing-content .content h2 {
     font-family: 'EB Garamond', serif;
     color: #AE8E5D;
@@ -76,86 +105,59 @@
 .content-img {
   float: right;
   width: 50%; }
+  @media (max-width: 767px) {
+    .content-img {
+      display: block;
+      float: none;
+      width: 100%; } }
 
 .sewing-img-big {
   display: block; }
+  @media (max-width: 767px) {
+    .sewing-img-big {
+      display: none; } }
 
 .sewing-img-big-phone {
   display: none; }
+  @media (max-width: 767px) {
+    .sewing-img-big-phone {
+      display: block; } }
 
 #white-dress-kind-bg {
   margin: 0 auto;
   margin-top: 30px;
   background-color: #fff; }
+  @media (max-width: 767px) {
+    #white-dress-kind-bg {
+      margin-top: 0px; } }
   #white-dress-kind-bg li {
     float: left;
     width: 21.25%; }
+    @media (max-width: 767px) {
+      #white-dress-kind-bg li {
+        float: left;
+        width: 35%; } }
   #white-dress-kind-bg li:first-child {
     margin-right: 5%; }
+    @media (max-width: 767px) {
+      #white-dress-kind-bg li:first-child {
+        margin-left: 10%;
+        margin-right: 5%;
+        margin-bottom: 1rem; } }
   #white-dress-kind-bg li:nth-child(2) {
     margin-right: 5%; }
+    @media (max-width: 767px) {
+      #white-dress-kind-bg li:nth-child(2) {
+        margin-left: 5%;
+        margin-right: 10%;
+        margin-bottom: 1rem; } }
   #white-dress-kind-bg li:nth-child(3) {
     margin-right: 5%; }
-
-@media (max-width: 767px) {
-  #ad-dress-banner {
-    display: none; }
-  #ad-dress-banner-phone {
-    display: block;
-    margin: 0 auto;
-    height: auto; }
-    #ad-dress-banner-phone .dress-banner-phone {
-      position: relative; }
-  #bride-kind-bg {
-    margin: 0 auto;
-    height: auto;
-    margin-bottom: 0px; }
-  #bride-kind li {
-    float: none;
-    width: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-bottom: 2rem; }
-  #sewing-bg {
-    margin-top: 0px; }
-  #sewing-content li {
-    float: none;
-    width: 100%; }
-  #sewing-content li:first-child {
-    padding: 30px; }
-  #sewing-content li:nth-child(2) {
-    padding: 30px; }
-  #sewing-content .content {
-    float: none;
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 2rem; }
-  #sewing-content .content-img {
-    display: block;
-    float: none;
-    width: 100%; }
-  #sewing-content .sewing-img-big {
-    display: none; }
-  #sewing-content .sewing-img-big-phone {
-    display: block; }
-  #white-dress-kind-bg {
-    margin: 0 auto;
-    margin-top: 0px;
-    background-color: #fff; }
-    #white-dress-kind-bg li {
-      float: left;
-      width: 35%; }
-    #white-dress-kind-bg li:first-child {
-      margin-left: 10%;
-      margin-right: 5%;
-      margin-bottom: 1rem; }
-    #white-dress-kind-bg li:nth-child(2) {
-      margin-left: 5%;
-      margin-right: 10%;
-      margin-bottom: 1rem; }
-    #white-dress-kind-bg li:nth-child(3) {
-      margin-left: 10%;
-      margin-right: 5%; }
+    @media (max-width: 767px) {
+      #white-dress-kind-bg li:nth-child(3) {
+        margin-left: 10%;
+        margin-right: 5%; } }
+  @media (max-width: 767px) {
     #white-dress-kind-bg li:nth-child(4) {
       margin-left: 5%;
       margin-right: 10%; } }

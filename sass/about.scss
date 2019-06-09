@@ -1,11 +1,31 @@
-$system-color: #AE8E5D;
-$match-color: #9F9F9F;
-$match-color-2: #787878;
-$white-color: #fff;
+$system-color: #AE8E5D; //金色
+$match-color: #9F9F9F; //中灰
+$match-color-2: #787878; //深灰
+$white-color: #fff; //白
+$skin-color: #F7F4F0; //膚灰
 $title-font: 2rem;
 $hit-font: 1.2rem;
+$bar-font: .8rem;
 $content-font: 1rem;
 $littele-font: .8rem;
+
+%title-h2{
+	font-family: 'EB Garamond', serif;
+    color: $system-color;
+    text-align: center;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	font-size: $title-font;
+}
+
+%span-hit{
+	font-size: $hit-font;
+	line-height: 1.6rem;
+	color: #444;
+	text-align: center;
+	letter-spacing: .2rem;
+}
+
 
 @mixin phone{
 	@media(max-width: 767px){
@@ -28,38 +48,38 @@ body{
 }
 
 #ad-about-banner{
-	  position: relative;
-    margin: 0 auto;
+  position: relative;
+  margin: 0 auto;
   height: 500px; 
   width: 1920px;
   background-image: url(../images/abouts-banner-1.png);
   @include phone(){
-  	display: none;
+  display: none;
   }
 }
 
 #ad-about-banner:after {
   content: "";
   position: absolute;
-/*   width: 450px; */
+/*width: 450px; */
   height: 400px;
-/*   background-color: red; */
+/*background-color: red; */
   border-top: 0px solid #e5c3b2;
-	border-bottom: 100px solid #EEE8E4;
+  border-bottom: 100px solid #EEE8E4;
   border-right: 1920px solid transparent;
 
   @include phone(){
-  	display: none;
+  display: none;
   }
   .about-banner {
-    position: relative; }
+  position: relative; }
 }
 
 #ad-about-banner-phone{
-	display: none;
-	position: relative;
-    margin: 0 auto;
- 	height: 440px; 
+  display: none;
+  position: relative;
+  margin: 0 auto;
+  height: 440px; 
   width: 450px;
   background-image: url(../images/about-banner-1-phone.png);
   background-position: right center; 
@@ -69,14 +89,14 @@ body{
 }
 
 #ad-about-banner-phone:after {
-	display: none;
-   content: "";
+  display: none;
+  content: "";
   position: absolute;
-/*   width: 450px; */
+/*width: 450px; */
   height: 370px;
-/*   background-color: red; */
+/*background-color: red; */
   border-top: 0px solid #e5c3b2;
-	border-bottom: 80px solid #EEE8E4;
+  border-bottom: 80px solid #EEE8E4;
   border-right: 450px solid transparent;
 
   @include phone(){
@@ -98,29 +118,29 @@ body{
 	}	
 	}
 	li:first-child{
-		float: left; 
-		width: 48%;
-		margin-right: 2%;
-		@include phone(){
-		float:none;
-		width: 92%;
-		margin-top: 0px;
-		margin-left: 4%;
-		margin-right: 4%;;
-		}
+	float: left; 
+	width: 48%;
+	margin-right: 2%;
+	@include phone(){
+	float:none;
+	width: 92%;
+	margin-top: 0px;
+	margin-left: 4%;
+	margin-right: 4%;;
+	}
 	}
 	li:nth-child(2){
-		float: left; 
-		width: 50%;
-		@include phone(){
-		float:none;
-		width: 92%;
-		margin-top: 0px;
-		margin-left: 4%;
-		margin-right: 4%;
-		margin-top: 10px;
-		margin-bottom: 10px;
-		}
+	float: left; 
+	width: 50%;
+	@include phone(){
+	float:none;
+	width: 92%;
+	margin-top: 0px;
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	}
 	}
 }
 
@@ -129,17 +149,15 @@ body{
 	margin: 30px 0px;
 	margin-top: 60px;
 	.about-article-title{
-		padding: 10px 0px;
-		margin-bottom: 1.5rem;
-		margin-top: 1.5rem;
-		//border: solid 1px red;
+	padding: 10px 0px;
+	margin-bottom: 1.5rem;
+	margin-top: 1.5rem;
+	//border: solid 1px red;
 	}
 	h2{
-    	font-family: 'EB Garamond', serif;
-    	color: $system-color;
+    	@extend %title-h2;
+		text-align: left;
 		margin-bottom: .5rem;
-		margin-top: 1rem;
-		font-size: 2rem;
     }
 	span{
 		font-size: 1rem;

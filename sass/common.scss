@@ -1,7 +1,8 @@
-$system-color: #AE8E5D;
-$match-color: #9F9F9F;
-$match-color-2: #787878;
-$white-color: #fff;
+$system-color: #AE8E5D; //金色
+$match-color: #9F9F9F; //中灰
+$match-color-2: #787878; //深灰
+$white-color: #fff; //白
+$skin-color: #F7F4F0; //膚灰
 $title-font: 2rem;
 $hit-font: 1.2rem;
 $bar-font: .8rem;
@@ -20,10 +21,6 @@ body{
      "Microsoft JhengHei";
       }
 
-a{
-	text-decoration: none;
-}
-
 /*設定rem=16*/
 html {
 font-size: 16px;
@@ -33,31 +30,6 @@ font-size: 16px;
 	content: "";
 	display: table;
 	clear: both;
-}
-
-#gototop{
-	position: fixed;
-	bottom: 30px;
-	right: 30px;
-	z-index: 100;
-	cursor: pointer;
-}
-
-.top{
-	padding: 15px 20px;
-	border-radius: 50%;
-	text-align: center;
-	color: #fff;
-	background: #d9d8d8;
-	i{
-	font-size: 1.5rem;
-	font-weight: 300;
-	}
-}
-
-.top:hover{
-	color: #bbb;
-	background: #fff;
 }
 
 #wrap{
@@ -111,7 +83,6 @@ nav{
 	@include phone(){
 	padding: 10px 10px;	
 	}
-
 
 }
 

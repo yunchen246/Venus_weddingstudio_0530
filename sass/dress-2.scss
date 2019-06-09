@@ -1,0 +1,197 @@
+$system-color: #AE8E5D; //金色
+$match-color: #9F9F9F; //中灰
+$match-color-2: #787878; //深灰
+$white-color: #fff; //白
+$skin-color: #F7F4F0; //膚灰
+$title-font: 2rem;
+$hit-font: 1.2rem;
+$bar-font: .8rem;
+$content-font: 1rem;
+$littele-font: .8rem;
+
+%title-h2{
+  font-family: 'EB Garamond', serif;
+    color: $system-color;
+    text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: $title-font;
+}
+
+%span-hit{
+  font-size: $hit-font;
+  line-height: 1.6rem;
+  color: #444;
+  text-align: center;
+  letter-spacing: .2rem;
+}
+
+
+@mixin phone{
+  @media(max-width: 767px){
+  @content
+  }
+}
+
+#ad-dress-banner-phone
+{
+  display: none;
+  @include phone(){
+  display: block;
+  margin: 0 auto;
+  height:  auto;
+  .dress-banner-phone {
+  position: relative; }
+  }
+}
+#ad-dress-banner {
+  display: block;
+  margin: 0 auto;
+  height: 640px; 
+  @include phone(){
+  display: none;  
+  }
+  .dress-banner {
+  position: relative; }
+}
+
+// #bride-kind-bg {
+//   margin: 0 auto;
+//   height: 280px;
+//   background-color: #f4edec;
+//   background-repeat: no-repeat;
+//   margin-bottom: 30px; }
+
+#bride-kind{
+  li {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  width: 31.33333%;
+  text-align: center;
+  border: solid 1px #9F9F9F; 
+  @include phone(){
+  float: none;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 2rem; 
+  }
+  h5 {
+  font-family: 'EB Garamond', serif;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #9F9F9F; }
+}
+  #bride-kind li a {
+    display: block; }
+
+  #bride-kind li:first-child {
+    margin-right: 3%; }
+
+  #bride-kind li:nth-child(2) {
+    margin-right: 3%; }
+}
+
+#sewing-bg {
+  margin: 0px auto;
+  margin-top: 30px;
+  background-color: #E8DDDD; 
+  @include phone(){
+  margin-top: 0px;  
+  }
+}
+
+#sewing-content {
+  li {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  width: 50%; 
+  @include phone(){
+  float: none;
+  width: 100%;   
+  }
+}
+
+  li:first-child {
+  padding: 67px;
+  background-color: #F2EAEA;
+  @include phone(){
+  padding: 30px;
+  } 
+}
+
+  li:nth-child(2) {
+  padding: 67px; 
+  @include phone(){
+  padding: 30px;  
+  }
+}
+
+  .content {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+  @include phone(){
+  float: none;
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 2rem;    
+  }
+
+  h2 {
+  font-family: 'EB Garamond', serif;
+  color: #AE8E5D;
+  margin-bottom: .5rem;
+  margin-top: 1rem;
+  font-size: 2rem; }
+
+span {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #444; }
+   }
+
+  }
+
+  .content-img {
+  float: right;
+  width: 50%; 
+  @include phone(){
+  display: block;
+  float: none;
+  width: 100%;  
+  }
+}
+
+  .sewing-img-big{
+    display: block;
+    @include phone(){
+    display: none;
+    }
+  }
+
+  .sewing-img-big-phone{
+    display: none;
+    @include phone(){
+    display: block;
+    }
+  }
+
+
+#white-dress-kind-bg {
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: #fff;
+  @include phone(){
+  margin-top: 0px;  
+  }
+
+
+}
+
+

@@ -1,0 +1,195 @@
+$system-color: #AE8E5D; //金色
+$match-color: #9F9F9F; //中灰
+$match-color-2: #787878; //深灰
+$white-color: #fff; //白
+$skin-color: #F7F4F0; //膚灰
+$title-font: 2rem;
+$hit-font: 1.2rem;
+$bar-font: .8rem;
+$content-font: 1rem;
+$littele-font: .8rem;
+
+%title-h2{
+	font-family: 'EB Garamond', serif;
+    color: $system-color;
+    text-align: center;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	font-size: $title-font;
+}
+
+%span-hit{
+	font-size: $hit-font;
+	line-height: 1.6rem;
+	color: #444;
+	text-align: center;
+	letter-spacing: .2rem;
+}
+
+
+
+@mixin phone{
+	@media(max-width: 767px){
+	@content
+	}
+}
+
+#ad-photo-banner-phone
+{
+  display: none;
+  @include phone(){
+  display: block;
+  margin: 0 auto;
+  height:  auto;
+  .photo-banner-phone {
+  position: relative; }
+  }
+}
+#ad-photo-banner {
+  display: block;
+  margin: 0 auto;
+  height: 640px; 
+  @include phone(){
+  display: none;  
+  }
+  .photo-banner {
+  position: relative; }
+}
+
+
+#photo-kind-bg{
+	margin: 30px auto;
+	.photo-kind-title{
+	margin-bottom: 20px;
+	@include phone(){
+	width: 96%;
+	margin: 0 2%;
+	margin-bottom: 20px;
+	}
+	}
+	h2{
+	@extend %title-h2;
+	text-align: left;
+	margin-bottom: .5rem;
+	border-bottom: solid 1px $system-color;
+	padding-bottom: 5px;
+    }
+	span{
+		@extend %span-hit;
+		text-align: left;
+	}
+}
+
+.photos-1 {
+	margin-bottom: 10px;
+ li{
+	float: left;
+    text-align: center;
+    @include phone(){
+    float: none;
+    }
+ }
+
+li:first-child{
+	width: 59%;	
+	margin-right: 1%;
+	@include phone(){
+	width: 96%;
+	margin: 0 2%;
+	margin-bottom: 5px;
+	}
+}
+
+li:nth-child(2){
+	width: 40%;
+	@include phone(){
+	width: 96%;
+	margin: 0 2%;
+	margin-bottom: 20px;
+	}
+}
+}
+
+
+.photos-2 {
+	margin-bottom: 10px;
+ li{
+	float: left;
+	width: 32.666666%;
+	 @include phone(){
+    float: none;
+    width: 96%;
+	margin: 0 2%;
+	margin-bottom: 5px;
+    }
+ }
+
+li:first-child{
+	margin-right: 1%;
+	@include phone(){
+    width: 96%;
+	margin: 0 2%;
+	margin-bottom: 5px;
+	}
+}
+
+li:nth-child(2){
+	margin-right: 1%;
+	@include phone(){
+    width: 96%;
+	margin: 0 2%;
+	margin-bottom: 5px;
+	}
+}
+
+li:nth-child(3){
+	margin-right: 0%;
+	@include phone(){
+    width: 96%;
+	margin: 0 2%;
+	margin-bottom: 20px;
+	}
+}
+}
+
+.photos-3 {
+ li{
+	float: left;
+    text-align: center;
+     @include phone(){
+    float: none;
+    width: 96%;
+	margin: 0 2%;
+	margin-bottom: 5px;
+    }
+ }
+
+li:first-child{
+	width: 49.5%;	
+	margin-right: 1%;
+	@include phone(){
+    width: 96%;
+	margin: 0 2%;
+	margin-bottom: 5px;
+	}
+
+}
+
+
+li:nth-child(2){
+	width: 49.5%;	
+	margin-right: 0%;
+	@include phone(){
+    width: 96%;
+	margin: 0 2%;
+	margin-bottom: 20px;
+	}
+
+}
+
+}
+
+
+
+
+

@@ -5,26 +5,72 @@ $white-color: #fff; //白
 $skin-color: #F7F4F0; //膚灰
 $title-font: 2rem;
 $hit-font: 1.2rem;
+$bar-font: .8rem;
 $content-font: 1rem;
 $littele-font: .8rem;
 
-.index-banner-phone{
-	display: none;
+%title-h2{
+	font-family: 'EB Garamond', serif;
+    color: $system-color;
+    text-align: center;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	font-size: $title-font;
 }
 
+%span-hit{
+	font-size: $hit-font;
+	line-height: 1.6rem;
+	color: #444;
+	text-align: center;
+	letter-spacing: .2rem;
+}
+
+
+
+@mixin phone{
+	@media(max-width: 767px){
+	@content
+	}
+}
+
+.index-banner-phone{
+	display: none;
+	@include phone(){
+	.index-banner-phone{
+		display: block;
+	}	
+}
+}
+
+.index-banner{
+	display: block;
+	@include phone(){
+	display: none;
+	}
+}
+
+
+
 #works-kind{
+	@include phone(){
+	text-align: center;	
+	}
     h2{
-    	font-family: 'EB Garamond', serif;
-    	color: $system-color;
-    	text-align: center;
-		margin-bottom: 1rem;
-		margin-top: 1rem;
-		font-size: 2rem;
+    	@extend %title-h2;
     }
     li{
     	float: left;
     	width: 31.33333%;
     	text-align: center;
+    	@include phone(){
+    	float: none;
+    	width: 80%;
+    	margin-left: 10%;
+    	margin-right: 10%;
+    	text-align: center;
+    	margin-bottom: 2rem;	
+    	}
     }
     li:first-child{
 	margin-right: 3%;
@@ -34,23 +80,44 @@ $littele-font: .8rem;
 	}
 
 	span{
-		font-size: $hit-font;
-		line-height: 1.6rem;
-		color: #444;
-		text-align: center;
-		letter-spacing: .2rem;
+		@extend %span-hit;
 	}
 }
 
 #ad-story-banner-phone{
 	display: none;
+	@include phone(){
+	display: block;
+	margin: 10px auto;
+	height: auto;
+	.story-banner{
+	position: relative;
+	}
+	.bg-white{
+		padding: .5rem;
+		background-color: #fff;
+		z-index: 1;
+		opacity:0.7;
+		text-align: center;
+		font-size: 1.125rem;
+		line-height: 2.5rem;
+		position: absolute;
+		top: 150px;
+		left: 15%;
+		right: 15%;
+	}
+	}
 }
 
 #ad-story-banner{
+	display: block;
 	margin: 30px auto;
 	height: 400px;
+	@include phone(){
+	display: none;
+	}
 	.story-banner{
-		position: relative;
+	position: relative;
 	}
 	.bg-white{
 		padding: 1.25rem;
@@ -69,15 +136,18 @@ $littele-font: .8rem;
 
 #dress-kind-bg-phone{
 	display: none;
+	@include phone(){
+    display: block;
+    margin: 0px 10px;
+	}
 }
 
-#dress-kind-bg{
-	margin: 0 auto;
-}
-
-#dress-kind{
+#dress-kind-phone{
+	display: none;
+	@include phone(){
 	margin: 30px 0px;
-	margin-top: 60px;
+	margin-top: 0px;	
+	}
 	.dress-kind-title{
 		padding: 10px 0px;
 		margin-bottom: 1.5rem;
@@ -85,16 +155,46 @@ $littele-font: .8rem;
 		//border: solid 1px red;
 	}
 	h2{
-    	font-family: 'EB Garamond', serif;
-    	color: $system-color;
+		@extend %title-h2;
+		text-align: left;
 		margin-bottom: .5rem;
-		margin-top: 1rem;
-		font-size: 2rem;
     }
 	span{
-		font-size: 1rem;
-		line-height: 1.6rem;
-		color: #444;
+		@extend %span-hit;
+		text-align: left;
+
+	}
+}
+
+#dress-kind-bg{
+	margin: 0 auto;
+	@include phone(){
+	display: none;	
+	}
+}
+
+#dress-kind{
+	margin: 30px 0px;
+	margin-top: 60px;
+	@include phone(){
+	margin: 10px 20px;
+    margin-top: 0px;	
+	}
+	.dress-kind-title{
+	padding: 10px 0px;
+	margin-bottom: 1.5rem;
+	margin-top: 1.5rem;
+	//border: solid 1px red;
+	}
+	h2{
+		@extend %title-h2;
+		text-align: left;
+		margin-bottom: .5rem;
+    }
+	span{
+		@extend %span-hit;
+		text-align: left;
+		letter-spacing: 0;
 	}
 }
 
@@ -104,31 +204,42 @@ $littele-font: .8rem;
 }
 
 #service-kind{
+	@include phone(){
+	margin: 0 5px;	
+	}
 	.service-kind-title{
 		margin-bottom: 1.5rem;
 		margin-top: 1.5rem;
+		@include phone(){
+		margin-bottom: 1.5rem;
+		margin-top: 1.5rem;
+		margin-left: 15px;	
+		}
 	}
 	h2{
-    	font-family: 'EB Garamond', serif;
-    	color: $system-color;
+		@extend %title-h2;
+		text-align: left;
 		margin-bottom: .5rem;
-		margin-top: 1rem;
-		font-size: 2rem;
     }
 	span{
-		font-size: 1.2rem;
-		line-height: 2rem;
-		color: #444;
+		@extend %span-hit;
+		text-align: left;
 	}
 	li{
 		float: left;
 		width: 48%;
 		position: relative;
 		margin-bottom: 2%;
+		@include phone(){
+		float: none;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;	
+		}
 		img{
 		width: 100%;
 		}
-		.service-kind-text{
+		.service-kind-title{
 		position: absolute;
 		left: 0;
 		bottom: 2px;
@@ -136,6 +247,11 @@ $littele-font: .8rem;
 		height: 2.5rem;
 		background-color: #fff;
 		opacity: 0.7;
+		@include phone(){
+		margin-bottom: 1.5rem;
+		margin-top: 1.5rem;
+		margin-left: 15px;	
+		}
 		span{
 		line-height: 2.5rem;
 		margin-left: .5rem;
@@ -147,146 +263,23 @@ $littele-font: .8rem;
 	}
 	li:nth-child(2){
 		margin-left: 2%;
+		@include phone(){
+		margin-left: 5%;	
+		}
 	}
 	li:nth-child(3){
 		margin-right: 2%;
 	}
 	li:nth-child(4){
 		margin-left: 2%;
-	}
-
-}
-
-@media (max-width: 767px){
-
-	.index-banner{
-		display: none;
-	}
-
-	.index-banner-phone{
-		display: block;
-	}
-
-	#works-kind{
-		text-align: center;
-    li{
-    	float: none;
-    	width: 80%;
-    	margin-left: 10%;
-    	margin-right: 10%;
-    	text-align: center;
-    	margin-bottom: 2rem;
-    }
-}
-
-#ad-story-banner{
-		display: none;
-}
-
-#ad-story-banner-phone{
-	display: block;
-	margin: 10px auto;
-	height: auto;
-	.story-banner{
-		position: relative;
-	}
-	.bg-white{
-		padding: .5rem;
-		background-color: #fff;
-		z-index: 1;
-		opacity:0.7;
-		text-align: center;
-		font-size: 1.125rem;
-		line-height: 2.5rem;
-		position: absolute;
-		top: 150px;
-		left: 15%;
-		right: 15%;
-	}
-}
-
-#dress-kind{
-	margin: 10px 20px;
-    margin-top: 0px;
-	.dress-kind-title{
-		padding: 10px 0px;
-		margin-bottom: 1.5rem;
-		margin-top: 1.5rem;
-		//border: solid 1px red;
-	}
-	h2{
-    	font-family: 'EB Garamond', serif;
-    	color: $system-color;
-		margin-bottom: .5rem;
-		margin-top: 1rem;
-		font-size: 2rem;
-    }
-	span{
-		font-size: 1rem;
-		line-height: 1.6rem;
-		color: #444;
-	}
-}
-	#dress-kind-bg
-	{
-	display: none;
-	}
-
-    #dress-kind-bg-phone{
-    display: block;
-    margin: 0px 10px;
-    #dress-kind-phone{
-	margin: 30px 0px;
-	margin-top: 0px;
-	.dress-kind-title{
-		padding: 10px 0px;
-		margin-bottom: 1.5rem;
-		margin-top: 1.5rem;
-		//border: solid 1px red;
-	}
-	h2{
-    	font-family: 'EB Garamond', serif;
-    	color: $system-color;
-		margin-bottom: .5rem;
-		margin-top: 1rem;
-		font-size: 2rem;
-    }
-	span{
-		font-size: 1rem;
-		line-height: 1.6rem;
-		color: #444;
-	}
-}
-    }
-
-
-    #service-kind{
-    	margin: 0 5px;
-
-    	.service-kind-title{
-		margin-bottom: 1.5rem;
-		margin-top: 1.5rem;
-		margin-left: 15px;
-		}
-	
-		li{
-		float: none;
-		width: 90%;
+		@include phone(){
 		margin-left: 5%;
-		margin-right: 5%;
+		}
+
 	}
 
-		li:nth-child(2) {
-   		margin-left: 5%;
-		}
-
-		li:nth-child(4) {
-   		margin-left: 5%;
-		}
-
 }
 
-}
 
 
 

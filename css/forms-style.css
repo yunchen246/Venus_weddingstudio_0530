@@ -1,0 +1,41 @@
+@charset "UTF-8";
+.contract-form {
+  font-size: 1.2rem;
+  line-height: 2.5em;
+  color: #444;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Noto Sans TC', ‘cwTeXMing’, 'sans-serif',  "Microsoft JhengHei"; }
+
+.contract-form .pure-u-23-24 {
+  width: 300px;
+  height: 30px;
+  font-size: 1.2rem;
+  line-height: 2.5em;
+  color: #444;
+  border: solid 1px #bbb;
+  border-radius: 5px; }
+
+.contract-form .pure-input-1-2 {
+  width: 300px;
+  height: 30px;
+  font-size: 1.2rem; }
+
+.pure-checkbox span {
+  color: #cf674f;
+  border-bottom: solid 1px; }
+
+.pure-button-submit {
+  margin: 20px auto;
+  width: 160px;
+  height: 40px;
+  font-size: 1.2rem;
+  color: #fff;
+  letter-spacing: 2px;
+  border: solid 1px #f2b69e;
+  background: #f2b69e; }
+
+.pure-button-submit:active {
+  border: solid 1px #de735a;
+  background: #de735a; }

@@ -1,0 +1,156 @@
+$system-color: #AE8E5D; //金色
+$match-color: #9F9F9F; //中灰
+$match-color-2: #787878; //深灰
+$white-color: #fff; //白
+$skin-color: #F7F4F0; //膚灰
+$title-font: 2rem;
+$hit-font: 1.2rem;
+$bar-font: .8rem;
+$content-font: 1rem;
+$littele-font: .8rem;
+
+%title-h2{
+  font-family: 'EB Garamond', serif;
+    color: $system-color;
+    text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: $title-font;
+}
+
+%span-hit{
+  font-size: $hit-font;
+  line-height: 1.6rem;
+  color: #444;
+  text-align: center;
+  letter-spacing: .2rem;
+}
+
+
+@mixin phone{
+  @media(max-width: 767px){
+  @content
+  }
+}
+
+#ad-contact-banner-phone
+{
+  display: none;
+  @include phone(){
+  display: block;
+  margin: 0 auto;
+  height:  auto;
+  .contact-banner-phone {
+  position: relative; }
+  }
+}
+#ad-contact-banner {
+  display: block;
+  margin: 0 auto;
+  height: 640px; 
+  @include phone(){
+  display: none;  
+  }
+  .contact-banner {
+  position: relative; }
+}
+
+#contact-kind-bg{
+  margin: 0 auto;
+}
+
+#contact-kind{
+  margin: 30px 0px;
+  margin-top: 60px;
+   @include phone(){
+  width: 100%;
+  }
+  .contact-kind-title{
+  padding: 10px 0px;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  //border: solid 1px red;
+  @include phone(){
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+  }
+  h2{
+    @extend %title-h2;
+    text-align: left;
+    margin-bottom: .5rem;
+    border-bottom: solid 1px $system-color;
+    padding-bottom: 5px;
+    }
+  span{
+    @extend %span-hit;
+    text-align: left;
+    letter-spacing: 0;
+  }
+  p{
+  margin-top: 10px;  
+  margin-bottom: 5px; 
+  line-height: 1.5em; 
+  }
+}
+
+.contact-kind-text{
+  li{
+  float: left;
+  width: 31.333333%;
+  // background-color: green;
+  @include phone(){
+  float: none;
+  width: 100%;
+  }
+  }
+  li:first-child{
+  margin-right: 3%;
+  @include phone(){
+  width: 100%;
+  }
+  }
+  li:nth-child(2){
+  margin-right: 3%;
+  @include phone(){
+  width: 100%;
+  }
+  }
+}
+
+.contact-info{
+  @include phone(){
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+  p{
+  font-size: $hit-font;
+  color: #444;
+  line-height: 2rem;
+  letter-spacing: 0px;
+  }
+
+}
+
+.contact-info .icon-i{
+  padding-right: 10px;
+
+}
+
+.form-2 iframe{
+  @include phone(){
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+}
+
+.contract-form .form-1{
+  @include phone(){
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+}

@@ -1,7 +1,4 @@
-.index-banner-phone {
-  display: none; }
-
-#works-kind h2 {
+#works-kind h2, #dress-kind-phone h2, #dress-kind h2, #service-kind h2 {
   font-family: 'EB Garamond', serif;
   color: #AE8E5D;
   text-align: center;
@@ -9,10 +6,41 @@
   margin-top: 1rem;
   font-size: 2rem; }
 
+#works-kind span, #dress-kind-phone span, #dress-kind span, #service-kind span {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #444;
+  text-align: center;
+  letter-spacing: .2rem; }
+
+.index-banner-phone {
+  display: none; }
+  @media (max-width: 767px) {
+    .index-banner-phone .index-banner-phone {
+      display: block; } }
+
+.index-banner {
+  display: block; }
+  @media (max-width: 767px) {
+    .index-banner {
+      display: none; } }
+
+@media (max-width: 767px) {
+  #works-kind {
+    text-align: center; } }
+
 #works-kind li {
   float: left;
   width: 31.33333%;
   text-align: center; }
+  @media (max-width: 767px) {
+    #works-kind li {
+      float: none;
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+      text-align: center;
+      margin-bottom: 2rem; } }
 
 #works-kind li:first-child {
   margin-right: 3%; }
@@ -20,19 +48,35 @@
 #works-kind li:nth-child(2) {
   margin-right: 3%; }
 
-#works-kind span {
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  color: #444;
-  text-align: center;
-  letter-spacing: .2rem; }
-
 #ad-story-banner-phone {
   display: none; }
+  @media (max-width: 767px) {
+    #ad-story-banner-phone {
+      display: block;
+      margin: 10px auto;
+      height: auto; }
+      #ad-story-banner-phone .story-banner {
+        position: relative; }
+      #ad-story-banner-phone .bg-white {
+        padding: .5rem;
+        background-color: #fff;
+        z-index: 1;
+        opacity: 0.7;
+        text-align: center;
+        font-size: 1.125rem;
+        line-height: 2.5rem;
+        position: absolute;
+        top: 150px;
+        left: 15%;
+        right: 15%; } }
 
 #ad-story-banner {
+  display: block;
   margin: 30px auto;
   height: 400px; }
+  @media (max-width: 767px) {
+    #ad-story-banner {
+      display: none; } }
   #ad-story-banner .story-banner {
     position: relative; }
   #ad-story-banner .bg-white {
@@ -50,56 +94,89 @@
 
 #dress-kind-bg-phone {
   display: none; }
+  @media (max-width: 767px) {
+    #dress-kind-bg-phone {
+      display: block;
+      margin: 0px 10px; } }
+
+#dress-kind-phone {
+  display: none; }
+  @media (max-width: 767px) {
+    #dress-kind-phone {
+      margin: 30px 0px;
+      margin-top: 0px; } }
+  #dress-kind-phone .dress-kind-title {
+    padding: 10px 0px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem; }
+  #dress-kind-phone h2 {
+    text-align: left;
+    margin-bottom: .5rem; }
+  #dress-kind-phone span {
+    text-align: left; }
 
 #dress-kind-bg {
   margin: 0 auto; }
+  @media (max-width: 767px) {
+    #dress-kind-bg {
+      display: none; } }
 
 #dress-kind {
   margin: 30px 0px;
   margin-top: 60px; }
+  @media (max-width: 767px) {
+    #dress-kind {
+      margin: 10px 20px;
+      margin-top: 0px; } }
   #dress-kind .dress-kind-title {
     padding: 10px 0px;
     margin-bottom: 1.5rem;
     margin-top: 1.5rem; }
   #dress-kind h2 {
-    font-family: 'EB Garamond', serif;
-    color: #AE8E5D;
-    margin-bottom: .5rem;
-    margin-top: 1rem;
-    font-size: 2rem; }
+    text-align: left;
+    margin-bottom: .5rem; }
   #dress-kind span {
-    font-size: 1rem;
-    line-height: 1.6rem;
-    color: #444; }
+    text-align: left;
+    letter-spacing: 0; }
 
 #service-kind-bg {
   margin: 0 auto;
   background-color: #F7F4F0; }
 
+@media (max-width: 767px) {
+  #service-kind {
+    margin: 0 5px; } }
+
 #service-kind .service-kind-title {
   margin-bottom: 1.5rem;
   margin-top: 1.5rem; }
+  @media (max-width: 767px) {
+    #service-kind .service-kind-title {
+      margin-bottom: 1.5rem;
+      margin-top: 1.5rem;
+      margin-left: 15px; } }
 
 #service-kind h2 {
-  font-family: 'EB Garamond', serif;
-  color: #AE8E5D;
-  margin-bottom: .5rem;
-  margin-top: 1rem;
-  font-size: 2rem; }
+  text-align: left;
+  margin-bottom: .5rem; }
 
 #service-kind span {
-  font-size: 1.2rem;
-  line-height: 2rem;
-  color: #444; }
+  text-align: left; }
 
 #service-kind li {
   float: left;
   width: 48%;
   position: relative;
   margin-bottom: 2%; }
+  @media (max-width: 767px) {
+    #service-kind li {
+      float: none;
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%; } }
   #service-kind li img {
     width: 100%; }
-  #service-kind li .service-kind-text {
+  #service-kind li .service-kind-title {
     position: absolute;
     left: 0;
     bottom: 2px;
@@ -107,7 +184,12 @@
     height: 2.5rem;
     background-color: #fff;
     opacity: 0.7; }
-    #service-kind li .service-kind-text span {
+    @media (max-width: 767px) {
+      #service-kind li .service-kind-title {
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+        margin-left: 15px; } }
+    #service-kind li .service-kind-title span {
       line-height: 2.5rem;
       margin-left: .5rem; }
 
@@ -116,98 +198,15 @@
 
 #service-kind li:nth-child(2) {
   margin-left: 2%; }
+  @media (max-width: 767px) {
+    #service-kind li:nth-child(2) {
+      margin-left: 5%; } }
 
 #service-kind li:nth-child(3) {
   margin-right: 2%; }
 
 #service-kind li:nth-child(4) {
   margin-left: 2%; }
-
-@media (max-width: 767px) {
-  .index-banner {
-    display: none; }
-  .index-banner-phone {
-    display: block; }
-  #works-kind {
-    text-align: center; }
-    #works-kind li {
-      float: none;
-      width: 80%;
-      margin-left: 10%;
-      margin-right: 10%;
-      text-align: center;
-      margin-bottom: 2rem; }
-  #ad-story-banner {
-    display: none; }
-  #ad-story-banner-phone {
-    display: block;
-    margin: 10px auto;
-    height: auto; }
-    #ad-story-banner-phone .story-banner {
-      position: relative; }
-    #ad-story-banner-phone .bg-white {
-      padding: .5rem;
-      background-color: #fff;
-      z-index: 1;
-      opacity: 0.7;
-      text-align: center;
-      font-size: 1.125rem;
-      line-height: 2.5rem;
-      position: absolute;
-      top: 150px;
-      left: 15%;
-      right: 15%; }
-  #dress-kind {
-    margin: 10px 20px;
-    margin-top: 0px; }
-    #dress-kind .dress-kind-title {
-      padding: 10px 0px;
-      margin-bottom: 1.5rem;
-      margin-top: 1.5rem; }
-    #dress-kind h2 {
-      font-family: 'EB Garamond', serif;
-      color: #AE8E5D;
-      margin-bottom: .5rem;
-      margin-top: 1rem;
-      font-size: 2rem; }
-    #dress-kind span {
-      font-size: 1rem;
-      line-height: 1.6rem;
-      color: #444; }
-  #dress-kind-bg {
-    display: none; }
-  #dress-kind-bg-phone {
-    display: block;
-    margin: 0px 10px; }
-    #dress-kind-bg-phone #dress-kind-phone {
-      margin: 30px 0px;
-      margin-top: 0px; }
-      #dress-kind-bg-phone #dress-kind-phone .dress-kind-title {
-        padding: 10px 0px;
-        margin-bottom: 1.5rem;
-        margin-top: 1.5rem; }
-      #dress-kind-bg-phone #dress-kind-phone h2 {
-        font-family: 'EB Garamond', serif;
-        color: #AE8E5D;
-        margin-bottom: .5rem;
-        margin-top: 1rem;
-        font-size: 2rem; }
-      #dress-kind-bg-phone #dress-kind-phone span {
-        font-size: 1rem;
-        line-height: 1.6rem;
-        color: #444; }
-  #service-kind {
-    margin: 0 5px; }
-    #service-kind .service-kind-title {
-      margin-bottom: 1.5rem;
-      margin-top: 1.5rem;
-      margin-left: 15px; }
-    #service-kind li {
-      float: none;
-      width: 90%;
-      margin-left: 5%;
-      margin-right: 5%; }
-    #service-kind li:nth-child(2) {
-      margin-left: 5%; }
+  @media (max-width: 767px) {
     #service-kind li:nth-child(4) {
       margin-left: 5%; } }

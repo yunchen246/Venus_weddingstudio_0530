@@ -1,0 +1,76 @@
+$system-color: #AE8E5D; //金色
+$match-color: #9F9F9F; //中灰
+$match-color-2: #787878; //深灰
+$white-color: #fff; //白
+$skin-color: #F7F4F0; //膚灰
+$title-font: 2rem;
+$hit-font: 1.2rem;
+$bar-font: .8rem;
+$content-font: 1rem;
+$littele-font: .8rem;
+
+%title-h2{
+  font-family: 'EB Garamond', serif;
+    color: $system-color;
+    text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: $title-font;
+}
+
+%span-hit{
+  font-size: $hit-font;
+  line-height: 1.6rem;
+  color: #444;
+  text-align: center;
+  letter-spacing: .2rem;
+}
+
+.contract-form{
+	font-size: $hit-font;
+    line-height: 2.5em;
+    color: #444;
+	letter-spacing: 2px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family:  'Noto Sans TC', ‘cwTeXMing’, 'sans-serif', 
+     "Microsoft JhengHei";
+}
+
+.contract-form .pure-u-23-24{
+	width: 300px;
+    height: 30px;
+   font-size: $hit-font;
+   line-height: 2.5em;
+    color: #444;
+    border: solid 1px #bbb;
+    border-radius: 5px;
+
+}
+
+.contract-form .pure-input-1-2{
+	width: 300px;
+    height: 30px;
+    font-size: $hit-font;
+}
+
+.pure-checkbox span{
+	color: #cf674f;
+	border-bottom: solid 1px;
+}
+
+.pure-button-submit{
+	margin: 20px auto;
+    width: 160px;
+    height: 40px;
+    font-size: $hit-font;
+    color: #fff;
+    letter-spacing: 2px;
+    border: solid 1px #f2b69e;
+    background: #f2b69e;
+}
+
+.pure-button-submit:active{
+	border: solid 1px #de735a;
+    background: #de735a;
+}
