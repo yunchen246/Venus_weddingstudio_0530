@@ -1,0 +1,19 @@
+body {
+  background: #FFF;
+  padding: 25px 25px 0px 25px;
+  font-size: 1rem;
+  line-height: 2em; }
+
+h1 {
+  padding-bottom: 15px;
+  text-align: center; }
+
+.message {
+  padding: 15px;
+  border: #9B9B9B 1px solid; }
+
+.copyright {
+  text-align: center;
+  font-size: #9B9B9B;
+  color: #999;
+  margin-top: 25px; }

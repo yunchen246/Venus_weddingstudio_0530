@@ -1,4 +1,4 @@
-#contact-kind h2 {
+#contact-kind h2, #map-section h2 {
   font-family: 'EB Garamond', serif;
   color: #AE8E5D;
   text-align: center;
@@ -96,11 +96,25 @@
   line-height: 2rem;
   letter-spacing: 0px; }
 
+.contact-info a {
+  display: block;
+  text-decoration: none;
+  line-height: 2.5rem;
+  color: #444; }
+
+.contact-info a:hover {
+  color: #AE8E5D; }
+
 .contact-info .icon-i {
   padding-right: 10px; }
 
 @media (max-width: 767px) {
-  .form-2 iframe {
+  .form-1 .pure-group {
+    width: 90%;
+    margin-right: 5%; } }
+
+@media (max-width: 767px) {
+  .form-2 .pure-group {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%; } }
@@ -110,3 +124,20 @@
     width: 90%;
     margin-left: 5%;
     margin-right: 5%; } }
+
+#map-bg {
+  margin: 0 auto; }
+
+#map-section {
+  margin: 30px 0px;
+  margin-top: 60px; }
+  #map-section h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #AE8E5D;
+    margin-bottom: 20px; }
+  @media (max-width: 767px) {
+    #map-section {
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%; } }

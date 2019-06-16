@@ -131,6 +131,15 @@ $littele-font: .8rem;
   line-height: 2rem;
   letter-spacing: 0px;
   }
+  a{
+  display: block;
+  text-decoration: none;
+  line-height: 2.5rem;
+  color: #444;
+  }
+  a:hover{
+  color:$system-color;
+  }
 
 }
 
@@ -139,7 +148,16 @@ $littele-font: .8rem;
 
 }
 
-.form-2 iframe{
+
+.form-1 .pure-group{
+  @include phone(){
+  width: 90%;
+  // margin-left: 5%;
+  margin-right: 5%;
+  }
+}
+
+.form-2 .pure-group{
   @include phone(){
   width: 90%;
   margin-left: 5%;
@@ -147,8 +165,35 @@ $littele-font: .8rem;
   }
 }
 
+// .form-2 .pure-input-1-2{
+//   display: block;
+//   width:360px;
+//   height:85px;
+// }
+
 .contract-form .form-1{
   @include phone(){
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+}
+
+#map-bg{
+  margin: 0 auto;
+}
+
+#map-section{
+  margin: 30px 0px;
+  margin-top: 60px;
+    h2{
+    @extend %title-h2;
+    text-align: left;
+    margin-bottom: 20px;
+    border-bottom: solid 1px $system-color;
+    margin-bottom: 20px;
+    }
+   @include phone(){
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;

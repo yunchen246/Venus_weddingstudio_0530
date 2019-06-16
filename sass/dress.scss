@@ -55,27 +55,40 @@ $littele-font: .8rem;
   position: relative; }
 }
 
-// #bride-kind-bg {
-//   margin: 0 auto;
-//   height: 280px;
-//   background-color: #f4edec;
-//   background-repeat: no-repeat;
-//   margin-bottom: 30px; }
+#dress-bride-kind-bg {
+  h2 {
+  font-family: 'EB Garamond', serif;
+  color: #AE8E5D;
+  margin-bottom: .5rem;
+  margin-top: 30px;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  border-bottom: solid 1px #AE8E5D;
+  padding-bottom: 20px;
+}
 
-#bride-kind{
+ }
+
+/*bride-kind*/
+.bride-kind{
+  //border: solid 1px red;
+  //background-color: #000;
+
   li {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
-  width: 31.33333%;
+  /*width: 30%;
+  margin-left: 5%;*/
+  width: 32%;
+  margin-left: 2%;
   text-align: center;
   border: solid 1px #9F9F9F; 
   @include phone(){
   float: none;
-  width: 80%;
-  margin-right: 10%;
-  margin-left: 10%;
-  margin-bottom: 2rem; 
+  width: 90%; 
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 20px;
   }
   h5 {
   font-family: 'EB Garamond', serif;
@@ -85,152 +98,134 @@ $littele-font: .8rem;
   font-size: 1.2rem;
   line-height: 1.6rem;
   color: #9F9F9F; }
+  }
+  li:first-child{
+  margin-left: 0;
+  @include phone(){
+  float: none;
+  width: 90%; 
+  margin-left: 5%;
+  margin-right: 5%;
+  
+  }
+  }
+
+
 }
-  #bride-kind li a {
-    display: block; }
 
-  #bride-kind li:first-child {
-    margin-right: 3%; }
+/*bride-kind end*/
 
-  #bride-kind li:nth-child(2) {
-    margin-right: 3%; }
+
+#dress-bride-kind-bg{
+  margin: 40px auto;
+  @include phone(){
+  width: 90%; 
+  margin-left: 5%;
+  margin-right: 5%;  
+  }
 }
 
-#sewing-bg {
+.dress-slidesfrom_slickslider li{
+  @include phone(){
+  margin-bottom: 5px;
+  }
+}
+
+.jewelry-bg {
   margin: 0px auto;
   margin-top: 30px;
   background-color: #E8DDDD; 
-  @include phone(){
-  margin-top: 0px;  
-  }
-}
+    h2{
+    @extend %title-h2;
+    text-align: left;
+    margin-top: 30px;
+    }
+    span{
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #444;
+    }
 
-#sewing-content {
-  li {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  float: left;
-  width: 50%; 
+  @include phone(){
+  padding-top: 10px; 
+  }
+  .jewelry-content{
+  margin-left: 20px;
+  @include phone(){
+   margin-left: 0px; 
+  margin-bottom: 30px; 
+  }
+  }
+  .jewelry-content li{
+  float: left; 
+  width: 50%;
   @include phone(){
   float: none;
-  width: 100%;   
-  }
-}
-
-  li:first-child {
-  padding: 67px;
-  background-color: #F2EAEA;
-  @include phone(){
-  padding: 30px;
-  } 
-}
-
-  li:nth-child(2) {
-  padding: 67px; 
-  @include phone(){
-  padding: 30px;  
-  }
-}
-
-  .content {
-  float: left;
-  width: 45%;
+  width: 90%; 
+  margin-left: 5%;
   margin-right: 5%;
-  @include phone(){
-  float: none;
-  width: 100%;
-  margin-right: 0;
-  margin-bottom: 2rem;    
-  }
-
-  h2 {
-  font-family: 'EB Garamond', serif;
-  color: #AE8E5D;
-  margin-bottom: .5rem;
-  margin-top: 1rem;
-  font-size: 2rem; }
-
-span {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  color: #444; }
-   }
 
   }
-
-  .content-img {
-  float: right;
-  width: 50%; 
-  @include phone(){
-  display: block;
+  }
+  .jewelry-content li:first-child{
+  width: 48%;
+  margin-right: 2%;
+  img{
+  margin-top: 20px;
+  }
+    @include phone(){
   float: none;
-  width: 100%;  
+  width: 90%; 
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+
   }
 }
 
-  .sewing-img-big{
-    display: block;
-    @include phone(){
-    display: none;
-    }
-  }
-
-  .sewing-img-big-phone{
-    display: none;
-    @include phone(){
-    display: block;
-    }
-  }
-
-
-#white-dress-kind-bg {
-  margin: 0 auto;
+#shoes-bg {
+  margin: 0px auto;
   margin-top: 30px;
-  background-color: #fff;
+  background-color: #f5f3f4; 
   @include phone(){
-  margin-top: 0px;  
+  padding-top: 10px;
+  padding-bottom: 20px;
   }
-  li {
-    float: left;
-    width: 21.25%; 
-    @include phone(){
-    float: left;
-    width: 35%;  
+    h2{
+    @extend %title-h2;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 20px;
     }
-  }
-
-  li:first-child {
-    margin-right: 5%;
-    @include phone(){
-    margin-left: 10%;
-    margin-right: 5%;
-    margin-bottom: 1rem; 
-     }
+    span{
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #444;
     }
 
-  li:nth-child(2) {
-    margin-right: 5%; 
-    @include phone(){
-    margin-left: 5%;
-    margin-right: 10%;
-    margin-bottom: 1rem; 
-    }
+  .shoes-content li{
+  float: right; 
+  width: 50%;
+  margin-top: 30px;
+  @include phone(){
+  float: none;
+  width: 90%; 
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+  }
+  .shoes-content li:last-child img{
+      width: 95%;
+      margin-left: 2.5%;
   }
 
-  li:nth-child(3) {
-    margin-right: 5%; 
-    @include phone(){
-    margin-left: 10%;
-    margin-right: 5%;
-    }
   }
 
-  li:nth-child(4){
-    @include phone(){
-     margin-left: 5%;
-    margin-right: 10%;  
-    }
-  }
-}
+
+
+
+
+
+
 
 

@@ -3,8 +3,10 @@ $match-color: #9F9F9F; //中灰
 $match-color-2: #787878; //深灰
 $white-color: #fff; //白
 $skin-color: #F7F4F0; //膚灰
+$light-skin-color: #fcf9f5; //淺膚灰
 $title-font: 2rem;
 $hit-font: 1.2rem;
+
 $bar-font: .8rem;
 $content-font: 1rem;
 $littele-font: .8rem;
@@ -37,9 +39,7 @@ $littele-font: .8rem;
 .index-banner-phone{
 	display: none;
 	@include phone(){
-	.index-banner-phone{
-		display: block;
-	}	
+	display: block;
 }
 }
 
@@ -53,23 +53,30 @@ $littele-font: .8rem;
 
 
 #works-kind{
+	margin: 40px auto;
 	@include phone(){
 	text-align: center;	
 	}
     h2{
     	@extend %title-h2;
+    	margin-bottom: 120px;
     }
-    li{
+    li{ 
+    	background-color: $light-skin-color;
+    	box-sizing: border-box;
+    	padding: 10px;
     	float: left;
     	width: 31.33333%;
     	text-align: center;
+    	padding-bottom: 20px;
+		border-radius:2%;
     	@include phone(){
     	float: none;
     	width: 80%;
     	margin-left: 10%;
     	margin-right: 10%;
     	text-align: center;
-    	margin-bottom: 2rem;	
+    	margin-bottom: 100px;
     	}
     }
     li:first-child{
@@ -78,11 +85,37 @@ $littele-font: .8rem;
 	li:nth-child(2){
 	margin-right: 3%;
 	}
+	li:nth-child(3){
+	@include phone(){
+	margin-bottom: 0px;	
+	}
+	}
+
 
 	span{
 		@extend %span-hit;
+		display: block;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		font-size: 1.5rem;
+		line-height: 2.5rem;
+		color: $system-color;
+	}
+
+	p{
+		@extend %span-hit;
+		letter-spacing: 0;
+		color: #666;
+		font-size: 1rem;
+	}
+
+	img{
+		border-radius:50%;
+		width: 80%;
+		margin-top: -80px;
 	}
 }
+
 
 #ad-story-banner-phone{
 	display: none;
@@ -145,6 +178,7 @@ $littele-font: .8rem;
 #dress-kind-phone{
 	display: none;
 	@include phone(){
+	display:block;;
 	margin: 30px 0px;
 	margin-top: 0px;	
 	}
@@ -224,6 +258,13 @@ $littele-font: .8rem;
 	span{
 		@extend %span-hit;
 		text-align: left;
+	}
+	.service-kind-text{
+		padding: 6px;
+		height: 2rem;
+		margin-top: -40px;
+		z-index: 100;
+
 	}
 	li{
 		float: left;
